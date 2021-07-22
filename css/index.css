@@ -1,0 +1,214 @@
+:root{
+    --header-color: red;
+}
+
+header {
+    padding: 10px 10%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    background: var(--header-color);
+}
+
+header .btn-action {
+    padding: 3px 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+    text-align: left;
+    text-transform: capitalize;
+    transition: 0.5s;
+    border: none;
+    text-decoration: none;
+    cursor: pointer;
+    background: var(--header-color);
+}
+
+header .btn-action::after {
+    content: "";
+    width: 60%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    right: 0;
+    transition: 0.5s;
+}
+
+header .btn-action:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+header .btn-action:hover::after {
+    width: 100%;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+main {
+    padding: 10px 10%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+main .card {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 25px;
+
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+main .card:hover {
+    z-index: 10;
+    -webkit-box-shadow: 0px 8px 25px 8px rgba(255,0,0,0.28); 
+    box-shadow: 0px 8px 25px 8px rgba(255,0,0,0.28);
+
+    transform: translateY(-8px);
+}
+
+.description{
+    width: 600px;
+    height: 100%;
+
+    padding: 20px;
+
+    position: fixed;
+    top: 0;
+    right: -650px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: white;
+
+    -webkit-box-shadow: -18px 0px 14px 8px rgba(0,0,0,0.22); 
+    box-shadow: -18px 0px 14px 8px rgba(0,0,0,0.22);
+
+    transition: 0.7s;
+}
+
+.description .description-header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description .description-img-top{
+    height: 400px;
+    width: 400px;
+}
+
+.description .description-body {
+    flex: 1;
+}
+
+.description .description-body .description-header {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+.description .description-body .description-title{
+    font-size: 45px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.description .description-body .description-price{}
+
+.description .description-body .description-text{}
+
+.showing {
+    z-index: 20; 
+    
+    transform: translateX(    
+        -650px
+    );
+}
+
+.register-car {
+    width: 750px;
+    height: 500px;
+    padding: 25px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    position: fixed;
+    top: -30px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    z-index: 30;
+
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px black ;
+
+    display: none;
+    opacity: 0;
+    transition: 1s;
+}
+
+.register-showing {
+    display: unset;
+    opacity: 1;
+    transform: translateY(100px);
+}
+
+.register-car header {
+    padding: 0px;
+    background: white;
+    
+    direction: rtl;
+
+    font-size: 20px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.register-car form {
+    display: flex;
+    flex-direction: row;
+}
+
+.register-car form .small-collumn{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.register-car form .small-collumn label img {
+    padding: 10px;
+    width: 100px;
+    height: 100px;
+    border: 5px #000 dashed;
+    border-radius: 10px;
+    cursor: pointer
+}
+
+.register-car form .small-collumn input {
+    display: none;
+}
+
+.register-car form .big-collumn{
+    flex: 1;
+}
+
+.register-car form .big-collumn input {
+    margin-bottom: 10px;
+}

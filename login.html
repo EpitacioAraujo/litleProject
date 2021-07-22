@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/login.css">
+
+    <script src="./libs/bootstrap.min.js"></script>
+    <script src="./libs/jquery.js"></script>
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="./libs/fontawesome/css/fontawesome.css">
+    <link 
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" 
+        integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni"
+        crossorigin="anonymous"
+    >
+
+</head>
+<body>
+    <div class="form-container">
+        <div class="form-content">    
+            <div class="form form-login">
+                <form>
+                    <input class="form-control" type="email">
+                    <input class="form-control" type="password">
+                    <a href="./index.html" class="form-control btn btn-primary">Login</a>
+                </form>
+    
+                <span>
+                    Não possui conta? <a id="cadastrar" href="#">cadastre-se!</a>
+                </span>
+            </div>
+
+            <form class="form form-cadastro">
+                <span id="close-cadastrar" style="cursor: pointer;"><-</span>
+                <input class="form-control" type="email" placeholder="email">
+                <input class="form-control" type="password" placeholder="senha">
+                <input class="form-control" type="password" placeholder="repita a senha">
+                <a href="./index.html" class="form-control btn btn-primary">cadastrar</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="./scripts/login.js"></script>
+</body>
+</html>

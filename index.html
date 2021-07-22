@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LocaCar</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+
+    <script src="./libs/bootstrap.min.js"></script>
+    <script src="./libs/jquery.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>logo</span>
+
+        <!-- <a href="./login.html" class="btn-action">login</a> -->
+
+        <button id="open-register-car" class="btn-action">Adicionar carro</button>
+    </header>
+
+    <main>
+        <div class="card">
+            <img src="./images/car.png" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/car.png" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/car.png" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="./images/car.png" class="card-img-top" alt="...">
+            
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div>
+    </main>
+
+    <div class="description">
+        <div class="description-header">
+            <button class="btn btn-default" id="close-description">X</button>
+        </div>
+
+        <img src="./images/car.png" class="description-img-top" alt="...">
+            
+        <div class="description-body">
+            <div class="description-header">
+                <h5 class="description-title">Car title</h5>
+                <h5 class="description-price">R$ 500,00 / mês</h5>
+            </div>
+            <p class="description-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        </div>
+
+        <!-- Usuário não logado -->
+        <!-- <a href="./login.html" class="btn btn-danger form-control">Faça login para poder comprar</a> -->
+
+        <!-- Usuário lgoado -->
+        <button class="btn btn-danger form-control">Comprar!</button>
+    </div>
+
+    
+    <div id="register-car-modal" class="register-car">
+        <header id="close-register-car">
+            x
+        </header>
+        <form>
+            <div class="small-collumn">
+                <label for="imagem-carro">
+                    <img src="./images/add-image-icon.png" alt="">
+                </label>
+                <input type="file" name="imagem-carro" id="imagem-carro">
+            </div>
+
+            <div class="big-collumn">
+                <input class="form-control" type="texte" placeholder="Modelo">
+                <input class="form-control" type="texte" placeholder="Ano">
+                <input class="form-control" type="texte" placeholder="Marca">
+                <input class="form-control" type="texte" placeholder="Valor de venda">
+                <textarea class="form-control" type="texte" placeholder="Observações"></textarea>
+                <input type="submit" style="margin-top: 10px;" value="Cadastrar" class="btn btn-danger form-control">
+            </div>
+
+        </form>
+    </div>
+    
+
+    <script src="./scripts/index.js"></script>
+</body>
+</html>
