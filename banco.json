@@ -1,0 +1,32 @@
+{
+    "admin": {
+        "email": "teste@gmail.com",
+        "password": "teste123"
+    },
+    "veiculos": [
+        {
+            "modelo": "teste",
+            "ano": 2019,
+            "marca": "marca teste",
+            "valor": 1233,
+            "observacao": "teste de descricao",
+            "imagem": "/images/car.png"
+        },
+        {
+            "imagem": "/images/car.png",
+            "modelo": "Modelo Teste",
+            "ano": "2020",
+            "marca": "marca top",
+            "valor": "20000",
+            "observacao": "Excelente carro"
+        },
+        {
+            "imagem": "/images/car.png",
+            "modelo": "Modelo Teste",
+            "ano": "2020",
+            "marca": "marca top",
+            "valor": "20000",
+            "observacao": "testeeeeeee"
+        }
+    ]
+}
