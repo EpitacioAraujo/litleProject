@@ -30,10 +30,10 @@
             <header id="close-register-car">
                 x
             </header>
-            <form method="POST" action="cadastro.php">
+            <form method="POST" action="cadastro.php" enctype="multipart/form-data" accept="image/*">
                 <div class="small-collumn">
                     <label for="imagem">
-                        <img src="../images/add-image-icon.png" alt="">
+                        <img src="../assets/add-image-icon.png" alt="">
                     </label>
                     <input type="file" name="imagem" id="imagem">
                 </div>
