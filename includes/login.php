@@ -28,9 +28,9 @@
                 <div class="form-content">    
                     <div class="form form-login" >
                         <form method="POST" action="http://localhost:8080/login.php">
-                            <input class="form-control" required name="email" type="email">
-                            <input class="form-control" required name="password" type="password">
-                            <button type="submit" style="margin-top: 10px;" class="form-control btn btn-primary">Login</button>
+                            <input class="form-control" required name="email" type="email" placeholder="Email">
+                            <input class="form-control" required name="password" type="password" placeholder="Senha">
+                            <button type="submit" class="form-control mt-4 btn btn-primary">Login</button>
                         </form>
                     </div>
         

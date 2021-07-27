@@ -35,16 +35,16 @@
                     <label for="imagem">
                         <img id="preview" src="../assets/add-image-icon.png" alt="">
                     </label>
-                    <input type="file" name="imagem" id="imagem">
+                    <input type="file" required name="imagem" id="imagem">
                 </div>
 
                 <div class="big-collumn">
-                    <input class="form-control" type="text" name="modelo" placeholder="Modelo">
-                    <input class="form-control" type="text" name="ano" placeholder="Ano">
-                    <input class="form-control" type="text" name="marca" placeholder="Marca">
-                    <input class="form-control" type="text" name="valor"  placeholder="Valor de venda">
-                    <textarea class="form-control" type="text" name="observacao" placeholder="Observações"></textarea>
-                    <input type="submit" style="margin-top: 10px;" value="Cadastrar" class="btn btn-danger form-control">
+                    <input class="form-control" required type="text" name="modelo" placeholder="Modelo">
+                    <input class="form-control" required type="text" name="ano" placeholder="Ano">
+                    <input class="form-control" required type="text" name="marca" placeholder="Marca">
+                    <input class="form-control" required type="text" name="valor"  placeholder="Valor de venda">
+                    <textarea class="form-control" required type="text" name="observacao" placeholder="Observações"></textarea>
+                    <input type="submit" value="Cadastrar" class="mt-4 btn btn-danger form-control">
                 </div>
 
             </form>
