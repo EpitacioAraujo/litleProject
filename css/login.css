@@ -48,3 +48,18 @@
 .cadastrando .form-content > .form {
     transform: translateX(-100%);
 }
+
+@media (max-width:600px) {
+    .page-container {
+        padding: 20px;
+    }
+
+    .form-container {
+        width: 100%;
+    }
+
+    .form-login, .form-cadastro{
+        flex: 1;
+        min-width: 100%;
+    }
+}
