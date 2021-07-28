@@ -4,27 +4,9 @@
         </div>
     </main>
 
-    <div class="description">
-            <div class="description-header">
-                <button class="btn btn-default" id="close-description">X</button>
-            </div>
-
-            <img src="../images/car.png" class="description-img-top" alt="...">
-                
-            <div class="description-body">
-                <div class="description-header">
-                    <h5 class="description-title">Car title</h5>
-                    <h5 class="description-price">R$ 500,00 / mês</h5>
-                </div>
-                <p class="description-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-
-            <!-- Usuário não logado -->
-            <!-- <a href="../login.html" class="btn btn-danger form-control">Faça login para poder comprar</a> -->
-
-            <!-- Usuário lgoado -->
-            <button class="btn btn-danger form-control">Comprar!</button>
-    </div>
+   <div>
+      <?php echo $modals;?>
+   </div>
 
     <div id="register-car-modal" class="register-car">
             <header id="close-register-car">

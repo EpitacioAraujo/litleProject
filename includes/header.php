@@ -22,7 +22,7 @@
     </head>
     <body>
         <header>
-            <span>logo</span>
+            <span>Concessionária</span>
 
             <div>
                 <?php echo $btnCadastro;?>

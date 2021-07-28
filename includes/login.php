@@ -33,14 +33,6 @@
                             <button type="submit" class="form-control mt-4 btn btn-primary">Login</button>
                         </form>
                     </div>
-        
-                    <form class="form form-cadastro">
-                        <span id="close-cadastrar" style="cursor: pointer;"><-</span>
-                        <input class="form-control" type="email" placeholder="email">
-                        <input class="form-control" type="password" placeholder="senha">
-                        <input class="form-control" type="password" placeholder="repita a senha">
-                        <a href="./index.html" class="form-control btn btn-primary">cadastrar</a>
-                    </form>
                 </div>
             </div>
         </div>

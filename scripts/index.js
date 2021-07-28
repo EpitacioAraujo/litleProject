@@ -1,9 +1,9 @@
-$('.card').on('click', function() {
-    $('.description').addClass('showing')
-})
-
-$('#close-description').on('click', function() {
-    $('.description').removeClass('showing')
+$('.close').on('click', function() {
+    $('.description').each(function (){
+        if($(this).hasClass('description showing')){
+            $(this).removeClass('showing')
+        }
+    })
 })
 
 $('#open-register-car').on('click', function() {
@@ -24,4 +24,16 @@ $('#imagem').change(function(){
         $('#preview').attr('src', fileReader.result)
     }
     fileReader.readAsDataURL(file)
+})
+
+$('.card').on('click', function() {
+    item = $(this);
+
+    $('.description').each(function (){
+      if($(this).attr('data-modal') === item.attr('data-veiculo')){
+        $(this).addClass('showing');
+      } else {
+        $(this).removeClass('showing');
+      }
+    })
 })

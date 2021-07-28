@@ -18,7 +18,7 @@ if($upload){
         'modelo'     => trim($_POST['modelo']),
         'ano'        => trim($_POST['ano']),
         'marca'      => trim($_POST['marca']),
-        'valor'      => trim( $_POST['valor']),
+        'valor'      => trim($_POST['valor']),
         'observacao' => trim($_POST['observacao']),
         'imagem'     => '/images'."/".$novoNome
     ];
