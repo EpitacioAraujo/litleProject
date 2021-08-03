@@ -1,3 +1,9 @@
+<?php
+
+$pathLogin = $_SERVER['HTTP_REFERER'].'login.php';
+
+?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
@@ -27,7 +33,7 @@
             <div class="form-container">
                 <div class="form-content">    
                     <div class="form form-login" >
-                        <form method="POST" action="https://projetoescolaveiculos.000webhostapp.com/login.php">
+                        <form method="POST" action="<?php echo $pathLogin?>">
                             <input class="form-control" required name="email" type="email" placeholder="Email">
                             <input class="form-control" required name="password" type="password" placeholder="Senha">
                             <button type="submit" class="form-control mt-4 btn btn-primary">Login</button>

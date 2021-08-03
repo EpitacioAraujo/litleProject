@@ -18,7 +18,7 @@
                       <img src="..'.$value['imagem'].'" class="card-img-top" alt="...">
                       <div class="card-body">
                           <h5 class="card-title">'.$value['modelo'].' '.$value['ano'].'</h5>
-                          <strong>R$ '.number_format($value['valor'],2,',','.').'</strong>
+                          <strong>R$ '.number_format(floatval($value['valor']),2,',','.').'</strong>
                           <p class="card-text">'.$value['observacao'].'</p>
                       </div>
                     </div>';
@@ -37,7 +37,7 @@
                   <div class="description-body">
                       <div class="description-header mt-4">
                           <h4 class="description-title">'.$value['modelo'].'</h4>
-                          <strong class="description-price">R$ '.number_format($value['valor'],2,',','.').'</strong>
+                          <strong class="description-price">R$ '.number_format(floatval($value['valor']),2,',','.').'</strong>
                       </div>
                       <p class="description-text">'.$value['observacao'].'</p>
                   </div>
