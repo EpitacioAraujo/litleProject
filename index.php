@@ -6,9 +6,6 @@ setlocale(LC_MONETARY, 'pt_BR');
 $veiculos = json_decode(file_get_contents(__DIR__ . '/banco.json'), true);
 $veiculos = $veiculos['veiculos'];
 
-$pathDelete = $_SERVER['HTTP_REFERER'].'excluir.php';
-$pathEdit   = $_SERVER['HTTP_REFERER'].'editar.php';
-
 //BOTÕES DE LOGIN E CADASTRO
 $login       = !isset($_COOKIE['login']) ? '<a href="./includes/login.php" class="btn-action">login</a>' : '';
 $btnCadastro = isset($_COOKIE['login']) ? '<button id="open-register-car" class="btn-action me-5">Adicionar carro</button>' : '';
