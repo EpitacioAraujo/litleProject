@@ -8,7 +8,7 @@ $veiculo = $lista['veiculos'][$id];
 
 //BOTÕES DE LOGIN E CADASTRO
 $login       = !isset($_COOKIE['login']) ? '<a href="./includes/login.php" class="btn-action">login</a>' : '';
-$btnCadastro = isset($_COOKIE['login']) ? '<button id="open-register-car" class="btn-action me-5">Adicionar carro</button>' : '';
+$btnCadastro = '';
 
 if (isset($_POST['btnExcluir'])) {
     //EXCLUI O VEÍCULO

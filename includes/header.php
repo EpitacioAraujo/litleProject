@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="../css/bootstrap.min.css">
         <link rel="stylesheet" href="../css/login.css">
         <link rel="stylesheet" href="../css/index.css">
+        <link rel="stylesheet" href="../css/editar.css">
 
         <!-- FONT AWESOME -->
         <link rel="stylesheet" href="../libs/fontawesome/css/fontawesome.css">

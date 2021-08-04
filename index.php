@@ -19,7 +19,7 @@ foreach ($veiculos as $key => $value) {
                           <h5 class="card-title">' . $value['modelo'] . ' - ' . $value['ano'] . '</h5>
                           <strong>R$ ' . number_format(floatval($value['valor']), 2, ',', '.') . '</strong>
                           <p class="card-text">' . $value['observacao'] . '</p>
-                          <a href="/" class="btn btn-success">Editar</a>
+                          <a href="/editar.php?id='.$key.'" class="btn btn-success">Editar</a>
                           <a href="/excluir.php?id='.$key.'" class="btn btn-danger">Deletar</a>
                       </div>
                     </div>';

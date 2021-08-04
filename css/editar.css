@@ -1,0 +1,11 @@
+.upload-image{
+  position: relative;
+}
+
+.upload-image input[type="file"]{
+    opacity: 0;
+    height: 85%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
