@@ -16,7 +16,6 @@ $('#close-register-car').on('click', function () {
 
 $('#imagem').change(function () {
     const file = $(this)[0].files[0]
-    console.log(file)
     const fileReader = new FileReader()
     fileReader.onloadend = function () {
         $('#preview').css('border', 'none')
@@ -28,7 +27,7 @@ $('#imagem').change(function () {
 
 $('.card').on('click', function (event) {
     item = $(this);
-    if (event.target.nodeName !== 'BUTTON') {
+    if (event.target.nodeName !== 'A') {
         $('.description').each(function () {
             if ($(this).attr('data-modal') === item.attr('data-veiculo')) {
                 $(this).addClass('showing');
